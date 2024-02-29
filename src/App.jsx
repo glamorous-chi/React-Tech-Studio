@@ -17,7 +17,7 @@ import RegisterPage from './pages/RegisterPage'
 function App() {
   // JSX allows us to combine both JS and HTML
   return (
-    <>
+    <div className='container'>
     {/* <Home/>
     <About/>
     <Products/> */}
@@ -43,7 +43,7 @@ function App() {
       </Routes>
     </BrowserRouter>
 
-    </>
+    </div>
   )
 }
 
