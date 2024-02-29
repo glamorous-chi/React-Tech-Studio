@@ -4,5 +4,14 @@
   padding: 2rem;
   text-align: center;
 }
-
-
+.password-input-wrapper{
+  position: relative;
+}
+.password-input-wrapper span{
+  position: absolute;
+  top: 30%;
+  right: 3%; 
+}
+span{
+  font-size: 1rem;
+}

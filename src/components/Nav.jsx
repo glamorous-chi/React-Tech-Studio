@@ -8,23 +8,35 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <NavLink to="/">
+        <Navbar.Brand>
+        📚
+        </Navbar.Brand>
+        </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link>
             <NavLink to="/" style = {{textDecoration:"none"}}>Home</NavLink>
-            </Nav.Link>
-            
+            </Nav.Link>  
             <Nav.Link>
             <NavLink to ="/about" style = {{textDecoration:"none"}}>About</NavLink>
             </Nav.Link>
             <Nav.Link>
             <NavLink to ="/product" style = {{textDecoration:"none"}}>Product</NavLink>
             </Nav.Link>
+            <Nav.Link>
+            <NavLink to ="/blog" style = {{textDecoration:"none"}}>Blog</NavLink>
+            </Nav.Link>
             {/* <Nav.Link>
-            <NavLink to ="/detailPage" style = {{textDecoration:"none"}}>Details Page</NavLink>
+            <NavLink to ="/register" style = {{textDecoration:"none"}}>Register</NavLink>
             </Nav.Link> */}
+            <Nav.Link>
+            <NavLink to ="/registerpage" style = {{textDecoration:"none"}}>RegisterPage</NavLink>
+            </Nav.Link>
+            <Nav.Link>
+            <NavLink to ="/login" style = {{textDecoration:"none"}}>Login</NavLink>
+            </Nav.Link>
     
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

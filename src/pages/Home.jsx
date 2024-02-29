@@ -10,17 +10,17 @@ import { useState } from "react";
 
 function Home(){
     // let name = "Chioma"
-    const [name, setName] = useState ("Chioma")
-    const [mine,setMine] = useState(true)
+    // const [name, setName] = useState ("Chioma")
+    // const [mine,setMine] = useState(true)
 
-    const handleClick = () => setName("Okeke");
+    // const handleClick = () => setName("Okeke");
     // const handleClickAgain = (name ) => console.log("Hey there Again " + name);
 
     return (
         <>
-        <p>{name}</p>
+        {/* <p>{name}</p>
 
-        <button onClick={handleClick}>Click me</button>
+        <button onClick={handleClick}>Click me</button> */}
 
         {/* <button onClick = {() => handleClickAgain("Chioma")
         }>Click me again</button> */}

@@ -1,9 +1,9 @@
 import Hero from "../components/Hero"
 import NavBar from "../components/Nav"
-import "../css/About.css"
+// import "../css/About.css"
 import img2 from "../assets/images/pexels-james-wheeler-414612.jpg"
-function About (){
-    
+function About() {
+
   const myJsx = <h3>This is an awesome JSX</h3>
   const myFavFood = <ul>
     <li>Jollof Rice</li>
@@ -12,25 +12,25 @@ function About (){
     <li>Yam</li>
   </ul>
   const food = ["amala", "tuwo", "Jollof Rice", "Spaghetti", "Yam"]
-  const myStyle = {listStyle: "none", color: "tomato",backgroundColor:"#eee"}
-    return (
+  const myStyle = { listStyle: "none", color: "tomato", backgroundColor: "#eee" }
+  return (
     <div>
-        {/* <NavBar/> */}
-        <Hero heading="Welcome to my About Page" image={img2}/>
-    <h1>Welcome to my tech app 1.0</h1>
-{/* To render the code */}
-    {myJsx}
-    {myFavFood}
+      {/* <NavBar/> */}
+      <Hero heading="Welcome to my About Page" image={img2} />
+      <h1>Welcome to my tech app 1.0</h1>
+      {/* To render the code */}
+      {myJsx}
+      {myFavFood}
 
-{/* Looping through the food array */}
-{food.map((f, index)=>{
-return(
-<div className="" key={index} style = {myStyle}>
-<p>My favourite food is {f}</p>
-</div>
-)
-})}
-</div>)
+      {/* Looping through the food array */}
+      {food.map((f, index) => {
+        return (
+          <div className="" key={index} style={myStyle}>
+            <p>My favourite food is {f}</p>
+          </div>
+        )
+      })}
+    </div>)
 }
 
 
